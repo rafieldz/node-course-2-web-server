@@ -38,16 +38,16 @@ app.get('/', (req,res) => {
     currentYear: new Date().getFullYear()
   });
 });
-//
-// app.get('/api', (req, res) => {
-//   res.send({
-//     name: 'Rafael',
-//     likes: [
-//       'Biking',
-//       'Cipher'
-//     ]
-//     });
-//   });
+
+app.get('/api', (req, res) => {
+  res.send({
+    name: 'Rafael',
+    likes: [
+      'Biking',
+      'Cipher'
+    ]
+    });
+  });
 
 app.get('/about', (req,res) => {
   res.render('about.hbs', {
